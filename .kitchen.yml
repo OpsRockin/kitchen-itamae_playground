@@ -4,15 +4,18 @@ driver:
 
 provisioner:
   name: itamae
+  itamae_plugins:
+    - rbenv
+    - selinux
 
 platforms:
   - name: ubuntu-12.04
     provisioner:
-      config:
-        node_json: nodes/node.json
-        recipe_list:
-          - recipes/package1.rb
-          - recipes/package2.rb
+      node_json: nodes/node.json
 
 suites:
   - name: default
+    provisioner:
+      recipe_list:
+        - recipes/package1.rb
+        - recipes/package2.rb
