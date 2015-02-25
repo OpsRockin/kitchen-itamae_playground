@@ -1,0 +1,18 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: itamae
+
+platforms:
+  - name: ubuntu-12.04
+    provisioner:
+      config:
+        node_json: nodes/node.json
+        recipe_list:
+          - recipes/package1.rb
+          - recipes/package2.rb
+
+suites:
+  - name: default
