@@ -16,6 +16,8 @@ platforms:
 suites:
   - name: default
     provisioner:
+      with_ohai: true
+      itamae_option: "--no-color"
       recipe_list:
         - recipes/package1.rb
         - recipes/package2.rb
