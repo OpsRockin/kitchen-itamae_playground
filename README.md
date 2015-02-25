@@ -1,10 +1,16 @@
 # kitchen-itamae_playground
 
+## setup
 
+clone this repo.
+
+```
+$ bundle install --binstubs
+```
 
 
 ```
-$ ./bin/kitchen converge 
+$ ./bin/kitchen converge
 -----> Starting Kitchen (v1.3.1)
 -----> Converging <default-ubuntu-1204>...
        Preparing files for transfer
@@ -25,3 +31,5 @@ $ ./bin/kitchen converge
        Finished converging <default-ubuntu-1204> (1m59.46s).
 -----> Kitchen is finished. (1m59.70s)
 ```
+
+See .kitchen.yml for more usage.
