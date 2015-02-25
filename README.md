@@ -1,6 +1,6 @@
 # kitchen-itamae_playground
 
-A example of [kitchen-itamae](https://github.com/OpsRockin/kitchen-itamae).
+An example of [kitchen-itamae](https://github.com/OpsRockin/kitchen-itamae).
 
 ## setup
 
