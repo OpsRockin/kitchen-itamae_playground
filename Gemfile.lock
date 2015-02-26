@@ -1,7 +1,7 @@
 PATH
   remote: ../kitchen-itamae
   specs:
-    kitchen-itamae (0.1.0)
+    kitchen-itamae (0.1.1)
       test-kitchen
 
 GEM

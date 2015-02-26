@@ -5,7 +5,6 @@ driver:
 provisioner:
   name: itamae
   itamae_plugins:
-    - common
     - rbenv
     - selinux
 
@@ -17,12 +16,12 @@ platforms:
     provisioner:
       node_json: nodes/node2.json
       run_list:
-#       - recipes/selinux.rb
+       - recipes/selinux.rb
 
 suites:
   - name: default
     provisioner:
-      with_ohai: true
+      with_ohai: false
       itamae_option: "--no-color"
       run_list:
         - recipes/package1.rb
