@@ -27,3 +27,5 @@ suites:
         - recipes/package1.rb
         - recipes/package2.rb
         - recipes/file.rb
+        - recipes/git.rb
+        - recipes/mail_alias.rb

@@ -9,14 +9,13 @@ describe "Install depends packages" do
   end
 end
 
-describe "file exist" do
+describe "files exist" do
   describe file('/tmp/hello.txt') do
     it { should be_file }
   end
-end
 
-describe "CentOS Only test" do
-  describe selinux, :if => os[:family] == 'redhat'  do
-    it { should be_permissive }
+  describe file('/tmp/template.txt') do
+    it { should be_file }
+    its(:content) { should match /World/ }
   end
 end
