@@ -1,6 +1,8 @@
 ---
 driver:
   name: vagrant
+  customize:
+    cpus: 2
 
 provisioner:
   name: itamae
@@ -23,9 +25,14 @@ suites:
     provisioner:
       with_ohai: false
       itamae_option: "--no-color"
-      run_list:
-        - recipes/package1.rb
-        - recipes/package2.rb
-        - recipes/file.rb
-        - recipes/git.rb
-        - recipes/mail_alias.rb
+    run_list:
+      - recipes/package1.rb
+      - recipes/package2.rb
+      - recipes/file.rb
+      - recipes/git.rb
+      - recipes/mail_alias.rb
+    attributes:
+      attr1: value1
+      attr2:
+        - ar1
+        - ar2
