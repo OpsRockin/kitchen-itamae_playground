@@ -6,9 +6,6 @@ driver:
 
 provisioner:
   name: itamae
-  itamae_plugins:
-    - rbenv
-    - selinux
 
 platforms:
   - name: ubuntu-14.04
