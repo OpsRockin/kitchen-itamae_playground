@@ -1,0 +1,7 @@
+# A sample Gemfile
+source "https://rubygems.org"
+
+gem 'test-kitchen', git: 'https://github.com/higanworks/test-kitchen.git', ref: 'provisioner_chef_apply'
+# gem 'test-kitchen', path: '../../../higanworks/test-kitchen'
+gem 'kitchen-vagrant'
+gem 'kitchen-itamae'

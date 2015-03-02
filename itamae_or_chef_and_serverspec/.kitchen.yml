@@ -1,0 +1,21 @@
+---
+driver:
+  name: vagrant
+  box: opscode-ubuntu-14.04
+
+platforms:
+  - name: vm-chef
+    provisioner:
+      name: chef_apply
+      apply_path: kitchen
+  - name: vm-itamae
+    provisioner:
+      name: itamae
+
+suites:
+  - name: default
+    run_list:
+      - package
+      - file
+    attributes:
+      message: EHLO world.example.com
