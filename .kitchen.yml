@@ -13,6 +13,7 @@ platforms:
       node_json: nodes/node1.json
   - name: centos-6.6
     provisioner:
+      sudo_command: sudo su -m -c
       node_json: nodes/node2.json
       run_list:
        - recipes/selinux.rb
@@ -20,14 +21,10 @@ platforms:
 suites:
   - name: default
     provisioner:
-      with_ohai: false
+      with_ohai: true
       itamae_option: "--no-color"
     run_list:
-      - recipes/package1.rb
-      - recipes/package2.rb
-      - recipes/file.rb
-      - recipes/git.rb
-      - recipes/mail_alias.rb
+      - roles/default.rb
     attributes:
       attr1: value1
       attr2:

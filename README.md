@@ -12,6 +12,8 @@ $ bundle install --binstubs
 
 ### Run Itamae
 
+F.Y.I.: [Best Practice · itamae-kitchen/itamae Wiki](https://github.com/itamae-kitchen/itamae/wiki/Best-Practice "Best Practice · itamae-kitchen/itamae Wiki")
+
 ```
 $ ./bin/kitchen converge
 -----> Starting Kitchen (v1.3.1)

@@ -1,17 +1,17 @@
 PATH
   remote: ../kitchen-itamae
   specs:
-    kitchen-itamae (0.2.0)
+    kitchen-itamae (0.2.3)
       test-kitchen
 
 GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.2.5)
-    kitchen-vagrant (0.15.0)
+    kitchen-vagrant (0.16.0)
       test-kitchen (~> 1.0)
     mixlib-shellout (2.0.1)
-    multi_json (1.10.1)
+    multi_json (1.11.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
@@ -19,7 +19,7 @@ GEM
       rspec-core (~> 3.2.0)
       rspec-expectations (~> 3.2.0)
       rspec-mocks (~> 3.2.0)
-    rspec-core (3.2.1)
+    rspec-core (3.2.2)
       rspec-support (~> 3.2.0)
     rspec-expectations (3.2.0)
       diff-lcs (>= 1.2.0, < 2.0)
@@ -32,12 +32,12 @@ GEM
       rspec-support (~> 3.2.0)
     rspec-support (3.2.2)
     safe_yaml (1.0.4)
-    serverspec (2.9.0)
+    serverspec (2.12.0)
       multi_json
       rspec (~> 3.0)
       rspec-its
-      specinfra (~> 2.15)
-    specinfra (2.15.1)
+      specinfra (~> 2.23)
+    specinfra (2.24.1)
       net-scp
       net-ssh
     test-kitchen (1.3.1)

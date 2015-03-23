@@ -1,0 +1,5 @@
+include_recipe "../cookbooks/taste/package1.rb"
+include_recipe "../cookbooks/taste/package2.rb"
+include_recipe "../cookbooks/taste/file.rb"
+include_recipe "../cookbooks/taste/git.rb"
+include_recipe "../cookbooks/taste/mail_alias.rb"

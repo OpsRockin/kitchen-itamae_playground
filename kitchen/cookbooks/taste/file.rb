@@ -4,6 +4,6 @@ end
 
 template "/tmp/template.txt" do
   action :create
-  source "../templates/template.erb"
+  source "templates/template.erb"
   variables(message: "World")
 end
