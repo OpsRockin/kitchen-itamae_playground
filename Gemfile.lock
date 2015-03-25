@@ -1,20 +1,44 @@
 PATH
+  remote: ../../higanworks/test-kitchen
+  specs:
+    test-kitchen (1.4.0.dev)
+      mixlib-shellout (>= 1.2, < 3.0)
+      net-scp (~> 1.1)
+      net-ssh (~> 2.7)
+      rubyzip (~> 1.1, >= 1.1.7)
+      safe_yaml (~> 1.0)
+      thor (~> 0.18)
+      winrm (~> 1.3)
+
+PATH
   remote: ../kitchen-itamae
   specs:
-    kitchen-itamae (0.2.3)
+    kitchen-itamae (0.2.4)
       test-kitchen
 
 GEM
   remote: https://rubygems.org/
   specs:
+    builder (3.2.2)
     diff-lcs (1.2.5)
+    ffi (1.9.8)
+    gssapi (1.2.0)
+      ffi (>= 1.0.1)
+    gyoku (1.2.3)
+      builder (>= 2.1.2)
+    httpclient (2.6.0.1)
     kitchen-vagrant (0.16.0)
       test-kitchen (~> 1.0)
+    little-plugger (1.1.3)
+    logging (1.8.2)
+      little-plugger (>= 1.1.3)
+      multi_json (>= 1.8.4)
     mixlib-shellout (2.0.1)
     multi_json (1.11.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
+    nori (2.4.0)
     rspec (3.2.0)
       rspec-core (~> 3.2.0)
       rspec-expectations (~> 3.2.0)
@@ -31,22 +55,28 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.2.0)
     rspec-support (3.2.2)
+    rubyntlm (0.4.0)
+    rubyzip (1.1.7)
     safe_yaml (1.0.4)
-    serverspec (2.12.0)
+    serverspec (2.13.0)
       multi_json
       rspec (~> 3.0)
       rspec-its
-      specinfra (~> 2.23)
-    specinfra (2.24.1)
+      specinfra (~> 2.25)
+    specinfra (2.26.1)
       net-scp
       net-ssh
-    test-kitchen (1.3.1)
-      mixlib-shellout (>= 1.2, < 3.0)
-      net-scp (~> 1.1)
-      net-ssh (~> 2.7)
-      safe_yaml (~> 1.0)
-      thor (~> 0.18)
     thor (0.19.1)
+    uuidtools (2.1.5)
+    winrm (1.3.0)
+      builder (>= 2.1.2)
+      gssapi (~> 1.2)
+      gyoku (~> 1.0)
+      httpclient (~> 2.2, >= 2.2.0.2)
+      logging (~> 1.6, >= 1.6.1)
+      nori (~> 2.0)
+      rubyntlm (~> 0.4.0)
+      uuidtools (~> 2.1.2)
 
 PLATFORMS
   ruby
@@ -55,3 +85,4 @@ DEPENDENCIES
   kitchen-itamae!
   kitchen-vagrant
   serverspec
+  test-kitchen!
